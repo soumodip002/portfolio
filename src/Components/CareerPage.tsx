@@ -84,7 +84,7 @@ export default function CareerPage() {
                 {/* Middle Dot and Education */}
                 <div className="w-full flex justify-end items-center mb-16 relative">
                     <div className="w-4 h-4 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                    <div className="mr-[calc(var(--spacing,1px)*40)] max-w-xs text-white text-right">
+                    <div className="mr-[calc(var(--spacing,1px)*50)] max-w-xs text-white text-right">
                         <h3 className="font-bold text-white text-lg">Diploma</h3>
                         <p className="text-sm text-white">Netaji Subhash Engineering College</p>
                         <p className="text-sm text-white">Passout: 2018</p>
