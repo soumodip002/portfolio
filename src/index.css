@@ -1,0 +1,44 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background-color: black;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  background: transparent
+} */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@100&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@700&display=swap'); /* <-- Japanese font */
+@import "tailwindcss";
+
+html, body, #root {
+  height: 100%;
+  margin: 0;
+  background: black; /* <-- important: remove solid black */
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 100;
+  background: transparent;
+}
+.writing-vertical {
+  writing-mode: vertical-rl;
+  text-orientation: upright;
+  line-height: 2.7rem;
+  letter-spacing: 0.2rem;
+}
+.writing-vertical-mobile {
+  white-space: pre;
+  line-height: 2.5rem;
+  text-orientation: upright;
+  right: 0px;
+ 
+}
+
