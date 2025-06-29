@@ -101,6 +101,7 @@ Frontend Developer | Creative Coder | Tech Explorer
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-blue?logo=linkedin&style=for-the-badge)](https://www.linkedin.com/in/soumadip-ghosh-chowdhury/)
 [![GitHub](https://img.shields.io/badge/GitHub-181717?logo=github&style=for-the-badge)](https://github.com/soumodip002)
 [![Email](https://img.shields.io/badge/Email-D14836?logo=gmail&style=for-the-badge)](mailto:soumadipgc@outlook.com)
+[![Portfolio](https://img.shields.io/badge/Portfolio-38bdf8?logo=google-chrome&style=for-the-badge)](https://soumadip-portfolio.web.app/)
 
 ---
 

@@ -13,7 +13,7 @@ const projects = [
     image: Portfolio,
     tech: ["React", "TailwindCSS", "TypeScript"],
     github: "https://github.com/soumodip002/portfolio",
-    live: "https://your-portfolio-live.com",
+    live: "https://soumadip-portfolio.web.app/",
   },
   {
     title: "Quiz App",
