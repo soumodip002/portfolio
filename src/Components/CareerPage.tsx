@@ -17,9 +17,10 @@ import {
     SiGit,
     SiGithub,
     SiVercel,
-    SiVite
+    SiVite,
 } from "react-icons/si";
 import { VscVscode } from "react-icons/vsc";
+import { SiPostman } from "react-icons/si";
 
 const techStack = [
     { icon: SiNextdotjs, name: "Next.js" },
@@ -36,6 +37,7 @@ const techStack = [
     { icon: SiRedux, name: "Redux" },
     { icon: SiGit, name: "Git" },
     { icon: SiGithub, name: "GitHub" },
+    { icon: SiPostman, name: "Postman" },
     { icon: SiVercel, name: "Vercel" },
     { icon: SiVite, name: "Vite" },
     { icon: VscVscode, name: "VS Code" },
@@ -69,38 +71,48 @@ export default function CareerPage() {
                 transition={{ duration: 1.5, ease: "easeOut" }}
                 className="w-full max-w-4xl flex flex-col items-center relative"
             >
+                {/* Timeline Line */}
                 <div className="absolute w-1 bg-white h-full left-1/2 transform -translate-x-1/2"></div>
 
-                {/* Top Dot and Education */}
-                <div className="w-full flex justify-start items-start mb-16 relative">
+                {/* 10th */}
+                <div className="w-full flex justify-start mb-16 relative">
                     <div className="w-4 h-4 bg-white rounded-full absolute top-0 left-1/2 transform -translate-x-1/2"></div>
-                    <div className="ml-[calc(var(--spacing,1px)*50)] max-w-xs text-white sm:ml-[calc(var(--spacing,1px)*40)]">
-                        <h3 className="font-bold text-white text-lg">10th</h3>
-                        <p className="text-sm text-white">Gopalnagar K.K. Institution</p>
-                        <p className="text-sm text-white">Passout: 2015</p>
+                    <div className="ml-[calc(var(--spacing,1px)*50)] sm:ml-[calc(var(--spacing,1px)*40)] max-w-xs text-white">
+                        <h3 className="font-bold text-lg">10th</h3>
+                        <p className="text-sm">Gopalnagar K.K. Institution</p>
+                        <p className="text-sm">Passout: 2015</p>
                     </div>
                 </div>
 
-                {/* Middle Dot and Education */}
-                <div className="w-full flex justify-end items-center mb-16 relative">
+                {/* Diploma */}
+                <div className="w-full flex justify-end mb-16 relative">
                     <div className="w-4 h-4 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
-                    <div className="mr-[calc(var(--spacing,1px)*50)] max-w-xs text-white text-right">
-                        <h3 className="font-bold text-white text-lg">Diploma</h3>
-                        <p className="text-sm text-white">Netaji Subhash Engineering College</p>
-                        <p className="text-sm text-white">Passout: 2018</p>
+                    <div className="mr-[calc(var(--spacing,1px)*50)] max-w-xs text-right text-white">
+                        <h3 className="font-bold text-lg">Diploma</h3>
+                        <p className="text-sm relative lg:left-3">Netaji Subhash Engineering College</p>
+                        <p className="text-sm">Passout: 2018</p>
                     </div>
                 </div>
 
-                {/* Bottom Dot and Education */}
+
+                {/* B.Tech*/}
+                <div className="w-full flex justify-start mb-16 relative">
+                    <div className="w-4 h-4 bg-white rounded-full absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2"></div>
+                    <div className="ml-[calc(var(--spacing,1px)*50)] sm:ml-[calc(var(--spacing,1px)*40)] max-w-xs text-white">
+                        <h3 className="font-bold text-lg">B.Tech</h3>
+                        <p className="text-sm">College of Engineering & Management, Kolaghat</p>
+                        <p className="text-sm">Passout: 2024</p>
+                    </div>
+                </div>
+
+                {/* Work Experience*/}
                 <div className="w-full flex justify-center relative mt-20">
-                    {/* Bottom Dot */}
                     <div className="w-4 h-4 bg-white rounded-full absolute top-0 left-1/2 transform -translate-x-1/2"></div>
 
-                    {/* B.Tech Education under the dot */}
-                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-center text-white">
-                        <h3 className="font-bold text-lg text-white">B.Tech</h3>
-                        <p className="text-sm text-white">College of Engineering & Management, Kolaghat</p>
-                        <p className="text-sm text-white">Passout: 2024</p>
+                    <div className="absolute top-6 left-1/2 transform -translate-x-1/2 text-center text-white max-w-sm">
+                        <h3 className="font-bold text-lg">ObjectSol Technologies</h3>
+                        <p className="text-sm">React Developer</p>
+                        <p className="text-sm">July 2025 – Present</p>
                     </div>
                 </div>
             </motion.div>
@@ -128,9 +140,8 @@ export default function CareerPage() {
                                 whileInView={{ opacity: 1, y: 0 }}
                                 transition={{ delay: index * 0.05, duration: 0.5, ease: "easeOut" }}
                                 viewport={{ once: true }}
-                                className={`group relative text-center transition-all duration-500 ease-in-out hover:z-10 ${
-                                    isDimmed ? "blur-sm opacity-30" : "opacity-100 blur-0"
-                                } ${isHovered ? "scale-110" : ""}`}
+                                className={`group relative text-center transition-all duration-500 ease-in-out hover:z-10 ${isDimmed ? "blur-sm opacity-30" : "opacity-100 blur-0"
+                                    } ${isHovered ? "scale-110" : ""}`}
                                 onMouseEnter={() => setHoveredIndex(index)}
                                 onMouseLeave={() => setHoveredIndex(null)}
                                 onTouchStart={() => setHoveredIndex(index)}
@@ -138,9 +149,8 @@ export default function CareerPage() {
                             >
                                 <tech.icon className="text-4xl sm:text-5xl mx-auto transition-transform duration-500 ease-in-out group-hover:scale-125" />
                                 <span
-                                    className={`absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 text-sm text-white transition-opacity duration-500 ease-in-out ${
-                                        isHovered ? "opacity-100" : "opacity-0"
-                                    }`}
+                                    className={`absolute bottom-[-2rem] left-1/2 transform -translate-x-1/2 text-sm text-white transition-opacity duration-500 ease-in-out ${isHovered ? "opacity-100" : "opacity-0"
+                                        }`}
                                 >
                                     {tech.name}
                                 </span>
