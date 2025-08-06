@@ -3,7 +3,7 @@ import { motion, useAnimation } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import { FiDownload } from "react-icons/fi";
 import profileImg from "../assets/hero.png";
-import resume from '../assets/resume.pdf';
+import resume from '../assets/Soumadip Ghosh Chowdhury.pdf';
 
 export default function AboutMe() {
   const controls = useAnimation();
